@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .faq {
+            font-weight: bold;
+        }
+
+        .answer {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>FAQs</h1>
+        <div class="faq">
+            Q1. While installing the extension, I’m getting a message: “This extension is not trusted by Enhanced Safe
+            Browsing.”
+        </div>
+        <div class="answer">
+            Ans: For new chrome developers, it generally takes a few months to become trusted. Please click on ‘continue
+            to install’.
+        </div>
+
+        <div class="faq">
+            Q2. I get the summary of all reviews for products having 6-7 pages of reviews, but for products that have
+            greater than ten pages of reviews, I only get the summary of first ten pages of reviews.
+        </div>
+        <div class="answer">
+            Ans: The current word capacity of the AI model used (GPT-3.5-turbo) is around 3000 words (4k tokens). We
+            have found that 10 pages of reviews is the sweet spot for most products i.e. summarising more than 10 pages
+            might exceed the 3000 word limit of OpenAI’s model. Moreover, we feel that a summary of ten pages gives a
+            good enough idea of the product’s performance to the customer. We may increase this limit of ten pages as we
+            get access to GPT 4 API which has a larger capacity.
+        </div>
+
+        <div class="faq">
+            Q3. I’m getting a message “reviews for this product might be too long for GPT's current capacity”
+        </div>
+        <div class="answer">
+            Ans: For some products, customers tend to give lengthy reviews, in such cases, ten pages of reviews can
+            exceed the 3000 word limit set by OpenAI. Please use the extension for a different product for now, while we
+            strive to mitigate this issue.
+        </div>
+
+        <div class="faq">
+            Q4. I’m getting a message: “A summary is not required due to lack of reviews” even when reviews are there
+        </div>
+        <div class="answer">
+            Ans: Make sure you are on the correct page. You do not need to click on ‘see all reviews’. Just open the
+            product page on flipkart, open the extension, and click the ‘generate summary’ button.
+        </div>
+    </div>
+</body>
+
+</html>
